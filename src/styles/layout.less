@@ -190,7 +190,6 @@ body {
 
 .overlap {
 	position: absolute;
-	min-height: 100%;
 	top: 100%;
 	width: 100%;
 	margin-top: 0px;
@@ -287,12 +286,17 @@ body {
 
 
 .few-words {
-	margin: 80px auto 80px;
+	margin: 40px auto 0 auto;
+
+	a {
+		color: @colorTextSecondary;
+		text-decoration: none;
+	}
 }
 
 .notify-by-email {
 	margin: 0px auto 0px;
-	background-color: @colorBgNotify;	
+	background-color: @colorBgNotify;
 	
 	.container {
 		padding: 30px 0px 30px;
