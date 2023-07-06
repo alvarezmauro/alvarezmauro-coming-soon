@@ -1,20 +1,22 @@
-// Custom variables
-@blue: blue;
+@import "variables.less";
+@import "mixins.less";
+@import "animate.less";
+@import "grid.less";
+@import "typo.less";
+@import "layout.less";
+@import "responsive.less";
 
-// Autoprefixer
-.vendor (@property, @value) {
-    -webkit-@{property}: @value;
-    -moz-@{property}: @value;
-    -ms-@{property}: @value;
-    -o-@{property}: @value;
-    @{property}: @value;
-}
 
-// Demonstration
+// Color schemes
+@import "color-scheme-silver.less";
+@import "color-scheme-grass.less";
+@import "color-scheme-sky.less";
+@import "color-scheme-berry.less";
+@import "color-scheme-wisteria.less";
 
-body {
-    .vendor(transition, all 200ms ease-in);
-    &:hover {
-        color: @blue;
-    }
-}
+// Custor color schemes
+@import "custom-color-scheme-retro.less";
+@import "custom-color-scheme-neue.less";
+
+// Font Awesome
+@import "../../node_modules/font-awesome/less/font-awesome.less";

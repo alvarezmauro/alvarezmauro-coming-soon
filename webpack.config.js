@@ -38,13 +38,28 @@ module.exports = (env) => {
         },
         {
           test: /\.less$/,
-          use: ["style-loader", "css-loader", "less-loader"],
+          use: [
+            {
+              loader: 'style-loader',
+            },
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'less-loader',
+              options: {
+                lessOptions: {
+                  strictMath: true,
+                },
+              },
+            },
+          ],
         },
         {
           test: /\.(jpe?g|png|gif|ico|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-          type: "asset/inline",
+          type: "asset/resource",
           generator: {
-            filename: "[name][ext]",
+            filename: "assets/[name][ext]",
           },
         },
       ],
