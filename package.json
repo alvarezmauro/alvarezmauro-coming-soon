@@ -4,7 +4,7 @@
     "description": "Coming soon website for alvarezmauro.com",
     "scripts": {
         "start": "webpack-dev-server",
-        "build": "webpack --progress --profile --colors"
+        "build": "webpack --progress --profile"
     },
     "repository": {
         "type": "git",
